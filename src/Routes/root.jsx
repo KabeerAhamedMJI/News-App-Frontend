@@ -7,6 +7,7 @@ import LoginForm from '../Components/loginForm';
 import SignUpForm from '../Components/SignUpForm';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeLoginStatus } from '../app/feature/login/loginSlice';
+import logo from './Img/logo.png';
 
 const Root = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +50,7 @@ const Root = () => {
   return (
     <>
       <header className="Header">
-        <img className="img-fluid float-left" src="/Img/logo.png" alt="Logo" />
+       <img className="img-fluid float-left" src={logo} alt="Logo" />
         <nav className="d-none d-xl-block d-xxl-block">
           <ul>
             <li><Link to="/">Home</Link></li>
